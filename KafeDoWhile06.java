@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class KafeDoWhile {
+public class KafeDoWhile06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -14,20 +14,20 @@ public class KafeDoWhile {
         int hargaRoti = 20000;
 
         do {
-            System.out.println("Masukkan nama pelanggan (ketika 'batal' untuk keluar): ");
+            System.out.print("Masukkan nama pelanggan (ketika 'batal' untuk keluar): ");
             namaPelanggan = sc.nextLine();
             if (namaPelanggan.equalsIgnoreCase("batal")) {
                 System.out.println("Transaksi DIbatalkan");
                 break;
             }
-            System.out.println("Jumlah Kopi: ");
+            System.out.print("Jumlah Kopi: ");
             kopi = sc.nextInt();
-            System.out.println("Jumlah Teh: ");
+            System.out.print("Jumlah Teh: ");
             teh = sc.nextInt();
-            System.out.println("Jumlah Roti: ");
+            System.out.print("Jumlah Roti: ");
             roti = sc.nextInt();
 
-            int totalHarga = (kopi * hargaKopi) + (teh * hargaTeh) + (roti + hargaRoti);
+            int totalHarga = (kopi * hargaKopi) + (teh * hargaTeh) + (roti * hargaRoti);
             System.out.println("Total yang harus dibayar: Rp " + totalHarga);
             sc.nextLine();
         } while (true);
